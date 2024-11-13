@@ -10,7 +10,7 @@ html,body{
 .container .card{
     width: 5%;
     height: 10%;
-    z-index: 2;
+    z-index: 10;
 }
 .backImg{
     position: absolute;
@@ -19,7 +19,6 @@ html,body{
 .draggable {
     position: absolute;
     cursor: move;
-    -webkit-user-drag: none;
 }
 
 .dropzone {
