@@ -19,6 +19,7 @@ html,body{
 .draggable {
     position: absolute;
     cursor: move;
+    -webkit-user-drag: none;
 }
 
 .dropzone {
