@@ -15,10 +15,12 @@ html,body{
 .backImg{
     position: absolute;
     width: 100%;
+    -webkit-touch-callout:none;
 }
 .draggable {
     position: absolute;
-    cursor: move;-webkit-touch-callout:none;
+    cursor: move;
+    -webkit-touch-callout:none;
 }
 
 .dropzone {
