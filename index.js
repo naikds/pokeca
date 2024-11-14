@@ -10,17 +10,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
         draggable.addEventListener('touchstart', (e) => {
             const touch = e.targetTouches[0];
             e.target.dataset.touchId = touch.identifier;
-            e.target.style.position = 'absolute';
-            e.target.style.left = `${touch.clientX - e.target.offsetWidth / 2}px`;
-            e.target.style.top = `${touch.clientY - e.target.offsetHeight / 2}px`;
+            //e.target.style.position = 'absolute';
+            //e.target.style.left = `${touch.clientX - e.target.offsetWidth / 2}px`;
+            //e.target.style.top = `${touch.clientY - e.target.offsetHeight / 2}px`;
         });
 
         draggable.addEventListener('touchmove', (e) => {
             e.preventDefault();
             const touch = Array.from(e.changedTouches).find(t => t.identifier == e.target.dataset.touchId);
             if (touch) {
-                e.target.style.left = `${touch.clientX - e.target.offsetWidth / 2}px`;
-                e.target.style.top = `${touch.clientY - e.target.offsetHeight / 2}px`;
+                //e.target.style.left = `${touch.clientX - e.target.offsetWidth / 2}px`;
+                //e.target.style.top = `${touch.clientY - e.target.offsetHeight / 2}px`;
             }
         });
 
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 first.style.visibility = '';
                 if (dropzone) {
                     dropzone.appendChild(e.target);
-                    e.target.removeAttribute('style');
+                    //e.target.removeAttribute('style');
                 }
             }
             delete e.target.dataset.touchId;
