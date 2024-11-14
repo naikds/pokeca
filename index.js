@@ -10,30 +10,30 @@ document.addEventListener('DOMContentLoaded', (event) => {
         draggable.addEventListener('touchstart', (e) => {
             const touch = e.targetTouches[0];
             e.target.dataset.touchId = touch.identifier;
-            //e.target.style.position = 'absolute';
-            //e.target.style.left = `${touch.clientX - e.target.offsetWidth / 2}px`;
-            //e.target.style.top = `${touch.clientY - e.target.offsetHeight / 2}px`;
+            e.target.style.position = 'absolute';
+            e.target.style.left = `${touch.clientX - e.target.offsetWidth / 2}px`;
+            e.target.style.top = `${touch.clientY - e.target.offsetHeight / 2}px`;
         });
 
         draggable.addEventListener('touchmove', (e) => {
             e.preventDefault();
             const touch = Array.from(e.changedTouches).find(t => t.identifier == e.target.dataset.touchId);
             if (touch) {
-                //e.target.style.left = `${touch.clientX - e.target.offsetWidth / 2}px`;
-                //e.target.style.top = `${touch.clientY - e.target.offsetHeight / 2}px`;
+                e.target.style.left = `${touch.clientX - e.target.offsetWidth / 2}px`;
+                e.target.style.top = `${touch.clientY - e.target.offsetHeight / 2}px`;
             }
         });
 
         draggable.addEventListener('touchend', (e) => {
             const touch = Array.from(e.changedTouches).find(t => t.identifier == e.target.dataset.touchId);
             if (touch) {
-                //const first = document.elementFromPoint(touch.clientX, touch.clientY);
-                //first.style.visibility = 'hidden';
+                const first = document.elementFromPoint(touch.clientX, touch.clientY);
+                first.style.visibility = 'hidden';
                 const dropzone = document.elementFromPoint(touch.clientX, touch.clientY).closest('.dropzone');
-                //first.style.visibility = '';
+                first.style.visibility = '';
                 if (dropzone) {
                     dropzone.appendChild(e.target);
-                    //e.target.removeAttribute('style');
+                    first.removeAttribute('style');
                 }
             }
             delete e.target.dataset.touchId;
