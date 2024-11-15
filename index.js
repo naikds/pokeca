@@ -33,7 +33,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 first.style.visibility = '';
                 if (dropzone) {
                     dropzone.appendChild(e.target);
-                    first.removeAttribute('style');
+                    e.target.style.left='0px';
+                    e.target.style.top='0px';
                 }
             }
             delete e.target.dataset.touchId;
