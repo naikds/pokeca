@@ -27,17 +27,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         draggable.addEventListener('touchend', (e) => {
             const touch = Array.from(e.changedTouches).find(t => t.identifier == e.target.dataset.touchId);
-            if (touch) {
-                const first = document.elementFromPoint(touch.clientX, touch.clientY);
-                first.style.visibility = 'hidden';
-                const dropzone = document.elementFromPoint(touch.clientX, touch.clientY).closest('.dropzone');
-                first.style.visibility = '';
-                if (dropzone) {
+            const tg = e.target
+            if (touch) { 
+                tg.style.visibility = 'hidden'; 
+                const dropzone = document.elementFromPoint(touch.clientX, touch.clientY).closest('.dropzone'); 
+                tg.style.visibility = ''; 
+                if (dropzone) { 
                     dropzone.appendChild(e.target);
-                }
-                e.target.style.top = '';
-                e.target.style.left = '';
-            }
+                } 
+                tg.style.left=''; 
+                tg.style.top=''; 
+            } 
             delete e.target.dataset.touchId;
         });
     });
