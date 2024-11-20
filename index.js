@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     const draggables = document.querySelectorAll('.draggable');
     const dropzones = document.querySelectorAll('.dropzone');
-    const cards = document.querySelectorAll('.card');
+    const deck = document.querySelector('.deck');
+    const hand = document.querySelector('.hand');
 
     draggables.forEach(draggable => {
         draggable.addEventListener('dragstart', (e) => {
@@ -56,6 +57,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         })
     })
 
+    const cards = document.querySelectorAll('.card');
     const conr = document.querySelector('.container');
     const cardWidth = conr.clientWidth * 0.12;
     const cardHeight = cardWidth * 1.4;
@@ -63,6 +65,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
         card.style.width = `${cardWidth}px`;
         card.style.height = `${cardHeight}px`;
     })
+
+    deck.addEventListener('click',(e)=>{
+        if(deck.firstElementChild){
+            hand.appendChild(deck.firstElementChild);
+        }
+    });
 });
 
 
