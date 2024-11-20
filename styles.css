@@ -31,3 +31,21 @@ html,body{
     height: 10%;
     border: 1px solid;
 }
+
+.hand{
+    width: 85%;
+    height: 10%;
+    border: 1px solid;
+}
+
+.deck{
+    width: 4%;
+    height: 8%;
+    top:47%;
+    left: 95%;
+    border: 1px solid;
+}
+
+.deck .card{
+    visibility:hidden;
+}
