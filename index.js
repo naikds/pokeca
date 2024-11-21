@@ -204,7 +204,7 @@ function btnAct(actionNm){
 
             trashCopy.forEach(img => {
                 // 画像の選択イベントを追加
-                img.addEventListener('touchstart',(e) => {
+                img.addEventListener('touchend',(e) => {
                     e.target.classList.toggle('selected');
                 });
                 targetContainer.appendChild(img);
