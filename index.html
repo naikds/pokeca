@@ -10,18 +10,106 @@
     <div class="container" id="container">
         <img src="bac_img.jpg" alt="backImg" class="backImg"/>
         <!-- 追加の画像を必要に応じてここに追加 -->
-        <div class="dropzone cardcontainer" style="top:61%;left: 10.2%;">
-            <div class="herfUp"></div><div class="herfDown"></div>
+         <div class="bench" id="bench">
+            <div class="dropzone cardcontainer" id="bench1">
+                <div class="herfUp"></div><div class="herfDown"></div>
+            </div>
+            <div class="dropzone cardcontainer" id="bench2"></div>
+            <div class="dropzone cardcontainer" id="bench3"></div>
+            <div class="dropzone cardcontainer" id="bench4"></div>
+            <div class="dropzone cardcontainer" id="bench5"></div>
         </div>
-        <div class="dropzone cardcontainer" style="top: 61%;left: 26.4%;"></div>
-        <div class="dropzone cardcontainer" style="top: 61%;left: 42.6%;"></div>
-        <div class="dropzone cardcontainer" style="top: 61%;left: 58.8%;"></div>
-        <div class="dropzone cardcontainer" style="top: 61%;left: 75%;"></div>
-        <div class="dropzone hand" style="top: 73%;left: 7%;"></div>
-        <div class="dropzone deck">
-            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046189_P_SOUBUREIZUEX.jpg" alt="card" class="draggable card" id="card1"/>
+        <div class="dropzone hand" id="hand"></div>
+        <div class="dropzone free" id="free"></div>
+        <div class="dropzone deck menuBtn" data-menu="deck_menu" id="deck">
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046189_P_SOUBUREIZUEX.jpg" alt="card" class="draggable card selectable" id="card1" />
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046189_P_SOUBUREIZUEX.jpg" alt="card" class="draggable card selectable" id="card2"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046189_P_SOUBUREIZUEX.jpg" alt="card" class="draggable card selectable" id="card3"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card4"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card5"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card6"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card7"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVK/046083_P_IKIRINKOEX.jpg" alt="card" class="draggable card selectable" id="card8"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVK/046083_P_IKIRINKOEX.jpg" alt="card" class="draggable card selectable" id="card9"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SV7/046019_P_SUPINROTOMU.jpg" alt="card" class="draggable card selectable" id="card10"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046189_P_SOUBUREIZUEX.jpg" alt="card" class="draggable card selectable" id="card11"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046189_P_SOUBUREIZUEX.jpg" alt="card" class="draggable card selectable" id="card12"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046189_P_SOUBUREIZUEX.jpg" alt="card" class="draggable card selectable" id="card13"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card14"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card15"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card16"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card17"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVK/046083_P_IKIRINKOEX.jpg" alt="card" class="draggable card selectable" id="card18"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVK/046083_P_IKIRINKOEX.jpg" alt="card" class="draggable card selectable" id="card19"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SV7/046019_P_SUPINROTOMU.jpg" alt="card" class="draggable card selectable" id="card20"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046189_P_SOUBUREIZUEX.jpg" alt="card" class="draggable card selectable" id="card21"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046189_P_SOUBUREIZUEX.jpg" alt="card" class="draggable card selectable" id="card22"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046189_P_SOUBUREIZUEX.jpg" alt="card" class="draggable card selectable" id="card23"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card24"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card25"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card26"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card27"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVK/046083_P_IKIRINKOEX.jpg" alt="card" class="draggable card selectable" id="card28"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVK/046083_P_IKIRINKOEX.jpg" alt="card" class="draggable card selectable" id="card29"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SV7/046019_P_SUPINROTOMU.jpg" alt="card" class="draggable card selectable" id="card30"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046189_P_SOUBUREIZUEX.jpg" alt="card" class="draggable card selectable" id="card31"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046189_P_SOUBUREIZUEX.jpg" alt="card" class="draggable card selectable" id="card32"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046189_P_SOUBUREIZUEX.jpg" alt="card" class="draggable card selectable" id="card33"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card34"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card35"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card36"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card37"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVK/046083_P_IKIRINKOEX.jpg" alt="card" class="draggable card selectable" id="card38"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVK/046083_P_IKIRINKOEX.jpg" alt="card" class="draggable card selectable" id="card39"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SV7/046019_P_SUPINROTOMU.jpg" alt="card" class="draggable card selectable" id="card40"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046189_P_SOUBUREIZUEX.jpg" alt="card" class="draggable card selectable" id="card41"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046189_P_SOUBUREIZUEX.jpg" alt="card" class="draggable card selectable" id="card42"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046189_P_SOUBUREIZUEX.jpg" alt="card" class="draggable card selectable" id="card43"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card44"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card45"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card46"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card47"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVK/046083_P_IKIRINKOEX.jpg" alt="card" class="draggable card selectable" id="card48"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVK/046083_P_IKIRINKOEX.jpg" alt="card" class="draggable card selectable" id="card49"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SV7/046019_P_SUPINROTOMU.jpg" alt="card" class="draggable card selectable" id="card50"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046189_P_SOUBUREIZUEX.jpg" alt="card" class="draggable card selectable" id="card51"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046189_P_SOUBUREIZUEX.jpg" alt="card" class="draggable card selectable" id="card52"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046189_P_SOUBUREIZUEX.jpg" alt="card" class="draggable card selectable" id="card53"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card54"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card55"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card56"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVLS/046188_P_KARUBOU.jpg" alt="card" class="draggable card selectable" id="card57"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVK/046083_P_IKIRINKOEX.jpg" alt="card" class="draggable card selectable" id="card58"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SVK/046083_P_IKIRINKOEX.jpg" alt="card" class="draggable card selectable" id="card59"/>
+            <img src="https://www.pokemon-card.com/assets/images/card_images/large/SV7/046019_P_SUPINROTOMU.jpg" alt="card" class="draggable card selectable" id="card60"/>
+        </div>
+        <div class="menu" id="deck_menu">
+            <ul>
+                <li class="menu-item" data-action="draw">1枚引く</li>
+                <li class="menu-item" data-action="deck_shufl">シャッフルする</li>
+                <li class="menu-item" data-action="deck_show">中身を見る</li>
+            </ul>
+        </div>
+        <div class="dropzone trash menuBtn" data-menu="trash_menu" id="trash"></div>
+        <div class="menu" id="trash_menu">
+            <ul>
+                <li class="menu-item" data-action="trash_show">中身を見る</li>
+            </ul>
         </div>
     </div>
     <script src="index.js"></script>
+
+    <!-- モーダル1 -->
+<div id="modal" class="modal" data-src="">
+    <div class="modal-content">
+        <span class="close" data-modal="modal">×</span>
+        <button class="move"  data-target=".hand">手札</button>
+        <button class="move"  data-target=".trash">トラッシュ</button>
+        <button class="move"  data-target=".deck">山札</button>
+        <button class="move"  data-target=".free">フリー</button>
+        <div class="image-container">
+        </div>
+    </div>
+</div>
 </body>
 </html>
