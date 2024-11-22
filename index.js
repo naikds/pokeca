@@ -189,7 +189,7 @@ function btnAct(actionNm){
 
             deckCopy.forEach(img => {
                 // 画像の選択イベントを追加
-                img.addEventListener('touchstart',(e) => {
+                img.addEventListener('click',(e) => {
                     e.target.classList.toggle('selected');
                 });
                 targetContainer.appendChild(img);
@@ -204,7 +204,7 @@ function btnAct(actionNm){
 
             trashCopy.forEach(img => {
                 // 画像の選択イベントを追加
-                img.addEventListener('touchend',(e) => {
+                img.addEventListener('click',(e) => {
                     e.target.classList.toggle('selected');
                 });
                 targetContainer.appendChild(img);
